@@ -38,7 +38,7 @@ The file `queries_revised.sql` contains a series of SQL queries written to analy
 
 Here are the answers to the interview questions provided in the task description.
 
-### 1. What is the difference between WHERE and HAVING? [cite: 18]
+### 1. What is the difference between WHERE and HAVING? 
 
 The **`WHERE`** and **`HAVING`** clauses both filter data, but they operate at different stages of a query.
 
@@ -50,7 +50,7 @@ The **`WHERE`** and **`HAVING`** clauses both filter data, but they operate at d
 * `GROUP BY fruit_type` is like sorting the remaining fruits into piles of apples, strawberries, etc.
 * `HAVING COUNT(*) > 10` is like checking which of these piles has more than 10 fruits in it.
 
-### 2. What are the different types of joins? [cite: 19]
+### 2. What are the different types of joins? 
 
 Joins are used to combine rows from two or more tables based on a related column. [cite: 9]
 
@@ -61,7 +61,7 @@ Joins are used to combine rows from two or more tables based on a related column
 
 
 
-### 3. How do you calculate average revenue per user in SQL? [cite: 20]
+### 3. How do you calculate average revenue per user in SQL? 
 
 You calculate this in two steps:
 1.  **Calculate Total Revenue for Each User**: First, you need a query that calculates the total revenue from each individual user. This typically involves multiplying `price` by `quantity` for each item ordered and then using `SUM()` to get the total for each user, grouped by a `user_id`.
