@@ -18,7 +18,7 @@ The analysis is performed on the `customer_data.csv` dataset. This file contains
 
 ## Tools
 
-* [cite_start]**Database**: PostgreSQL (as an example from the suggested options of MySQL, PostgreSQL, or SQLite [cite: 5])
+* **Database**: PostgreSQL (as an example from the suggested options of MySQL, PostgreSQL, or SQLite [cite: 5])
 * **Language**: SQL
 
 ---
@@ -27,10 +27,10 @@ The analysis is performed on the `customer_data.csv` dataset. This file contains
 
 The file `queries_revised.sql` contains a series of SQL queries written to analyze the `CustomerData` table. These queries demonstrate proficiency in:
 * Filtering data using `WHERE`
-* [cite_start]Grouping and aggregating data with `GROUP BY`, `SUM`, and `AVG` [cite: 8, 11]
-* [cite_start]Sorting results with `ORDER BY` [cite: 8]
-* [cite_start]Creating and using subqueries 
-* [cite_start]Creating and querying `VIEW`s for simplified analysis 
+* Grouping and aggregating data with `GROUP BY`, `SUM`, and `AVG` [cite: 8, 11]
+* Sorting results with `ORDER BY` [cite: 8]
+* Creating and using subqueries 
+* Creating and querying `VIEW`s for simplified analysis 
 
 ---
 
@@ -38,7 +38,7 @@ The file `queries_revised.sql` contains a series of SQL queries written to analy
 
 Here are the answers to the interview questions provided in the task description.
 
-### [cite_start]1. What is the difference between WHERE and HAVING? [cite: 18]
+### 1. What is the difference between WHERE and HAVING? [cite: 18]
 
 The **`WHERE`** and **`HAVING`** clauses both filter data, but they operate at different stages of a query.
 
@@ -50,9 +50,9 @@ The **`WHERE`** and **`HAVING`** clauses both filter data, but they operate at d
 * `GROUP BY fruit_type` is like sorting the remaining fruits into piles of apples, strawberries, etc.
 * `HAVING COUNT(*) > 10` is like checking which of these piles has more than 10 fruits in it.
 
-### [cite_start]2. What are the different types of joins? [cite: 19]
+### 2. What are the different types of joins? [cite: 19]
 
-[cite_start]Joins are used to combine rows from two or more tables based on a related column. [cite: 9]
+Joins are used to combine rows from two or more tables based on a related column. [cite: 9]
 
 * **`(INNER) JOIN`**: Returns only the records that have matching values in both tables. It's the most common join type.
 * **`LEFT JOIN` (or `LEFT OUTER JOIN`)**: Returns all records from the left table and the matched records from the right table. If there's no match, the columns from the right table will contain `NULL`.
@@ -61,7 +61,7 @@ The **`WHERE`** and **`HAVING`** clauses both filter data, but they operate at d
 
 
 
-### [cite_start]3. How do you calculate average revenue per user in SQL? [cite: 20]
+### 3. How do you calculate average revenue per user in SQL? [cite: 20]
 
 You calculate this in two steps:
 1.  **Calculate Total Revenue for Each User**: First, you need a query that calculates the total revenue from each individual user. This typically involves multiplying `price` by `quantity` for each item ordered and then using `SUM()` to get the total for each user, grouped by a `user_id`.
