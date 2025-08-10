@@ -18,7 +18,7 @@ The analysis is performed on the `customer_data.csv` dataset. This file contains
 
 ## Tools
 
-* **Database**: PostgreSQL (as an example from the suggested options of MySQL, PostgreSQL, or SQLite [cite: 5])
+* **Database**: PostgreSQL (as an example from the suggested options of MySQL, PostgreSQL, or SQLite)
 * **Language**: SQL
 
 ---
